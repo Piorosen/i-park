@@ -1,5 +1,5 @@
 FROM golang:alpine AS builder
-RUN apk add git
+RUN apk add git g++ gcc
 
 ENV GO111MODULE=on \
     CGO_ENABLED=1 \
